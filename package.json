@@ -8,10 +8,12 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server — mode development — open — hot",
+    "build": "webpack — mode production",
+    "remove_start": "react-scripts start",
+    "remove_build": "react-scripts build",
+    "remove_test": "react-scripts test",
+    "remove_eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +29,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
